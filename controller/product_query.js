@@ -8,13 +8,13 @@ const pool = new Pool({
   port: process.env.PGPORT,
 });
 
-const getAllProduct = async function (product) {
+const getAllProduct = async function (q) {
   let query = {
     text:
       "select product_name, product_description, product_category, product_price, product_quantity, product_image from quatro_product " +
-      (product ? "where lower(product_name) like $1 " : "") +
+      (q ? "where lower(product_name) like $1 " : "") +
       "order by product_id asc ",
-    values: product ? [`%${product}%`.toLowerCase()] : [],
+    values: q ? [`%${q}%`.toLowerCase()] : [],
   };
 
   let resultQuery = await pool.query(query);
@@ -210,37 +210,6 @@ const updateProductQuantityAPI = async (request, response) => {
   }
 };
 
-const minusProductQuantity = async function (product_quantity, product_id) {
-  let query = {
-    text: `update quatro_product set product_quantity = product_quantity - $1 where product_id = $2;`,
-    values: [product_quantity, product_id],
-  };
-
-  let resultQuery = await pool.query(query);
-  let minusQuantity = resultQuery.rows;
-
-  return minusQuantity;
-};
-
-const minusProductQuantityAPI = async (request, response) => {
-  const { product_quantity, product_id } = request.body;
-
-  try {
-    let minusQuantity = await minusProductQuantity(
-      product_quantity,
-      product_id
-    );
-
-    response.status(200).json({
-      result: minusQuantity,
-      message: "Product quantity updated",
-    });
-  } catch (error) {
-    console.log("error:", error);
-    response.status(404).json({ error: error.message });
-  }
-};
-
 const deleteProduct = async function (product_id) {
   let query = {
     text: "delete from quatro_product where product_id = $1",
@@ -271,6 +240,5 @@ module.exports = {
   updateProductDetailsAPI,
   updateProductPriceAPI,
   updateProductQuantityAPI,
-  minusProductQuantityAPI,
   deleteProductAPI,
 };
