@@ -1,7 +1,7 @@
 GET http://localhost:5004/quatro_product/get
 
 ###
-POST http://localhost:5000/quatro_product/create
+POST http://localhost:5004/quatro_product/create
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/quatro_product/update_price
+POST http://localhost:5004/quatro_product/update_price
 Content-Type: application/json
 
 {
@@ -36,17 +36,29 @@ Content-Type: application/json
     "product_id": "16"
 }
 
+update quatro_product set product_quantity = product_quantity - $1 where product_id = $2
+
 ###
-POST http://localhost:3000/quatro_product/update_quantity
+POST http://localhost:5004/quatro_product/update_quantity
 Content-Type: application/json
 
 {
-    "product_quantity": "48",
-    "product_id": "7"
+    "product_quantity": "6",
+    "product_id": "2"
 }
 
 ###
-DELETE http://localhost:3000/quatro_product/delete
+POST http://localhost:5004/quatro_product/minus_quantity
+Content-Type: application/json
+
+{
+    "product_quantity": "6",
+    "product_id": "2"
+}
+
+
+###
+DELETE http://localhost:5004/quatro_product/delete
 Content-Type: application/json
 
 {
