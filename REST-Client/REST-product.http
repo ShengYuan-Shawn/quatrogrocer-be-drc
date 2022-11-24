@@ -1,6 +1,9 @@
 GET http://localhost:5004/quatro_product/get
 
 ###
+GET http://localhost:5004/quatro_product/get?keyword=ayam
+
+###
 POST http://localhost:5004/quatro_product/create
 Content-Type: application/json
 

@@ -8,13 +8,14 @@ const pool = new Pool({
   port: process.env.PGPORT,
 });
 
-const getAllProduct = async function (q) {
+const getAllProduct = async function (keyword) {
+  console.log("*******************", keyword, "*****************");
   let query = {
     text:
       "select product_name, product_description, product_category, product_price, product_quantity, product_image from quatro_product " +
-      (q ? "where lower(product_name) like $1 " : "") +
+      (keyword ? "where lower(product_name) like $1 " : "") +
       "order by product_id asc ",
-    values: q ? [`%${q}%`.toLowerCase()] : [],
+    values: keyword ? [`%${keyword}%`.toLowerCase()] : [],
   };
 
   let resultQuery = await pool.query(query);
@@ -25,7 +26,7 @@ const getAllProduct = async function (q) {
 
 const searchProductAPI = async (request, response) => {
   try {
-    let searchProductName = await getAllProduct(request.query.q);
+    let searchProductName = await getAllProduct(request.query.keyword);
     response.status(200).json({ result: searchProductName });
   } catch (error) {
     response.status(404).json({ error: error.message });
