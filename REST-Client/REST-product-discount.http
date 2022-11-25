@@ -1,4 +1,8 @@
 ###
+GET http://localhost:5004/quatro_product_discount/get
+
+
+###
 POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 

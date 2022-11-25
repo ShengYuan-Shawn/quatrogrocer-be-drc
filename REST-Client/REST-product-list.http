@@ -4,7 +4,7 @@ Content-Type: application/json
 {
     "product_name":"Mineral Water",
     "product_description" : "Sky juice",
-    "product_category": "Drinks",
+    "product_category": "Beverages",
     "product_price": 2.50,
     "product_quantity": "100",
     "product_image": "https://www.miizu.my/image/digitalgrocer/image/cache/data/all_product_images/product-204/3%20new-1080x1080.png"
@@ -18,7 +18,7 @@ Content-Type: application/json
 {
     "product_name":"Tropicana Apple Juice 320ml",
     "product_description":"Apple Juice to your daily routine for a delicious and convenient source of vitamin C. Refreshing apple juice with a deliciously sweet taste",
-    "product_category":"Juice",
+    "product_category":"Beverages",
     "product_price": 3.45,
     "product_quantity":"100",
     "product_image":"https://m.media-amazon.com/images/I/61cPgyyfqEL._SL1500_.jpg "
@@ -1124,7 +1124,7 @@ Content-Type: application/json
 {
     "product_name": "SmartHeart Cat Food 1.2kg Mackerel",
     "product_description":"Corn,Poultry Meal,Fish Meal,Corn Gluten Meal,Soybean Meal,Chicken Fat,Brewers Dried Yeast,Lecithin,Fish Oil,Vitamins and Minerals,Taurine,Antioxidants,Flavoring,Food Coloring.",
-    "product_category":"Pet food",
+    "product_category":"Pet Food",
     "product_price": 14.99,
     "product_quantity":"100",   
     "product_image": "https://www.petswonderland.com/media/catalog/product/cache/4601bc3edc3d99d2758a5e315967177b/0/1/019349_smartheart_cat_mackerel_1.2kg.jpg"
@@ -1138,7 +1138,7 @@ Content-Type: application/json
 {
     "product_name": "Probalance Chicken With Veggie 400G",
     "product_description":"Selected Meat and Meat by-Products (Derived from Chicken, Beef and Lamb),Cereal,Vegetable Protein,Gels,Salt,Sodium Nitrite,Oligosaccharide,Glucosamine,Chondroitin,Water.",
-    "product_category":"Pet food",
+    "product_category":"Pet Food",
     "product_price": 5.20,
     "product_quantity":"100",   
     "product_image": "http://www.probalance.com.my/wp-content/uploads/2019/11/chicken-in-veggie-400g-edited2.png"
@@ -1152,7 +1152,7 @@ Content-Type: application/json
 {
     "product_name": "Whiskas Tuna 1.2kg",
     "product_description":"Wholegrain Cereal (Corn, Wheat),Poultry and Poultry by Products,Soy Bean Product (Full Fat Soy Bean, Soy Bean Meal),Corn Gluten Meal,Vegetables Oil (Palm Sterine, Soy Oil),Ocean Fish,Wheat Flour,Minerals,Iodised Salt,Vitamins,Taurine,Methionine,Food Coloring,Preservatives,Flavour.",
-    "product_category":"Pet food",
+    "product_category":"Pet Food",
     "product_price": 14.30,
     "product_quantity":"100",   
     "product_image": "https://s3-eu-west-1.amazonaws.com/w3.cdn.gpd/me.whiskas.14/large_whiskas-tuna-flavour-636564627251243653.png"
@@ -1166,7 +1166,7 @@ Content-Type: application/json
 {
     "product_name": "Pedigree Beef 1.15kg",
     "product_description":"Meat and Meat by products (Chicken, Beef, Sheep),Gelling Agents,Fibre,Wheat Gluten,Minerals,Sunflower Oil,Colours,Vitamins,Flavour,Preservative.",
-    "product_category":"Pet food",
+    "product_category":"Pet Food",
     "product_price": 14.30,
     "product_quantity":"100",   
     "product_image": "https://cdn.shopify.com/s/files/1/0428/6129/7830/products/012355-1-1_9b6debc1-7430-4266-bd2a-e4981e47ed70_500x.jpg?v=1635460533"

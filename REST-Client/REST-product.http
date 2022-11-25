@@ -27,9 +27,9 @@ Content-Type: application/json
 
     "product_name":"",
     "product_description" :"",
-    "product_category": "",
-    "product_image": "https://cdn1-production-images-kly.akamaized.net/QzTTZqGXM5PqL9REm9okFMn-r20=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2702436/original/016317800_1547270165-shutterstock_314020379.jpg",
-    "product_id" : "1"
+    "product_category": "Pet Food",
+    "product_image": "",
+    "product_id" : "82"
 
 
 }

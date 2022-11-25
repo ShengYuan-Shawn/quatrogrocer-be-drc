@@ -2,7 +2,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"RIBENA PET REGULAR 450ML",
+    "discount_product_name":"Ribena Pet Regular 450ML",
     "discount_product_description" : "Water,Sucrose,Blackcurrant Juice (5%),Vitamin C,Preservative (Potassium Sorbate),Acidity Regulator (Citric Acid),Colour (Grape Skin Extract),Contains Permitted Preservative, Colouring Substance and Acidity Regulator as Food Conditioner.",
     "discount_product_category": "Juice",
     "discount_product_price": 3.20,
@@ -16,7 +16,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"MILO FUZE 3IN1 REGULAR 8SX33G",
+    "discount_product_name":"Milo Fuze 3in1 Regular 8sX33G",
     "discount_product_description" : "NestlÃ© Milo Activ-Go 3 In 1 Chocolate Malt Drink 8 Stick Packs x 33g",
     "discount_product_category": "Tea, Coffee, Chocolate Drink",
     "discount_product_price": 8.75,
@@ -30,7 +30,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"BOH TEA 500G",
+    "discount_product_name":"Boh Tea 500G",
     "discount_product_description" : "BOH Cameron Highlands Tea Leaves 500g 100% Tea Leaves.",
     "discount_product_category": "Tea, Coffee, Chocolate Drink",
     "discount_product_price": 10.85,
@@ -44,7 +44,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"LAYS CLAS CHEESY CHEDDAR 184.2G",
+    "discount_product_name":"Lays Clas Chessy Cheddar 184.2G",
     "discount_product_description" : "Lay's Cheddar & Sour Cream 184.2g",
     "discount_product_category": "Snacks",
     "discount_product_price": 11.99,
@@ -58,7 +58,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"AH HUAT W/C EXTRA RICH 15SX40G",
+    "discount_product_name":"Ah Huat W/C Extra Rich 15sX40G",
     "discount_product_description" : "Ah Huat Extra Rich White Coffee 15 x 40g",
     "discount_product_category": "Tea, Coffee, Chocolate Drinks",
     "discount_product_price": 12.99,
@@ -72,7 +72,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"MUNCHYS OATKRUNCH DARK CHOC 390G",
+    "discount_product_name":"Munchys Oatkrunch Dark Choc 390G",
     "discount_product_description" : "Munchy's Oat Krunch Dark Chocolate Crackers 16 Packs 416g",
     "discount_product_category": "Snacks",
     "discount_product_price": 8.39,
@@ -86,7 +86,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"MILO DAIRY FREE ALMOND RTD 1L",
+    "discount_product_name":"Milo Dairy Free Almond RTD 1L",
     "discount_product_description" : "Extract of Malt Barley And Starch, Soya Protein (2.4%), Sugar, Cocoa Powder, Palm Olein, Almond Protein (0.6%), Stabilsers.",
     "discount_product_category": "Tea, Coffee, Chocolate Drinks",
     "discount_product_price": 9.29,
@@ -100,7 +100,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"LACTEL TEMPTATION NATURAL YOGURT 500G",
+    "discount_product_name":"Lactel Temptation Natural Yogurt 500G",
     "discount_product_description" : "Lactel Temptation Natural Yogurt 500G",
     "discount_product_category": "Dairy",
     "discount_product_price": 4.59,
@@ -114,7 +114,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"VITAGEN ASSORTED 5X125ML",
+    "discount_product_name":"Vitagen Assorted 5X125ML",
     "discount_product_description" : "Vitagen Assorted 5X125ML",
     "discount_product_category": "Dairy",
     "discount_product_price": 4.60,
@@ -128,7 +128,7 @@ POST http://localhost:5004/quatro_product_discount/create
 Content-Type: application/json
 
 {
-    "discount_product_name":"GARDENS CHILLI SAUCE 500G",
+    "discount_product_name":"Gardens Chilli Sauce 500G",
     "discount_product_description" : "Sugar, chili, vinegar, contains stabiliser and acidity regulator as permitted food conditioner, salt tomato paste.",
     "discount_product_category": "Sauce & Dressing",
     "discount_product_price": 4.19,
