@@ -515,7 +515,7 @@ const minusDiscountProductQuantityAPI = async (request, response) => {
   }
 };
 
-const deleteDiscountProduct = async function (product_id) {
+const deleteDiscountProduct = async function (discount_product_id) {
   let query_1 = {
     text: "select discount_product_id from quatro_product_discount where discount_product_id=$1",
     values: [discount_product_id],
@@ -530,7 +530,7 @@ const deleteDiscountProduct = async function (product_id) {
 
   let query = {
     text: "delete from quatro_product_discount where discount_product_id = $1",
-    values: [product_id],
+    values: [discount_product_id],
   };
 
   let resultQuery = await pool.query(query);
