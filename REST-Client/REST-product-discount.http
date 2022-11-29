@@ -1,10 +1,5 @@
 ###
 GET http://localhost:5004/quatro_product_discount/get
-Content-Type: application/json
-
-{
-    
-}
 
 
 
