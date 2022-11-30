@@ -48,7 +48,7 @@ app.post(
   "/quatro_product/update_quantity",
   db_product.updateProductQuantityAPI
 );
-// app.post("/quatro_product/minus_quantity", db_product.minusProductQuantityAPI);
+app.post("/quatro_product/minus_quantity", db_product.minusProductQuantityAPI);
 app.delete("/quatro_product/delete", db_product.deleteProductAPI);
 //Discount Product
 app.get(
@@ -64,8 +64,8 @@ app.post(
   db_product_discount.updateDiscountProductDetailsAPI
 );
 app.post(
-  "/quatro_product_discount/minus"
-  // db_product_discount.minusProductQuantityAPI
+  "/quatro_product_discount/minus",
+  db_product_discount.minusDiscountProductQuantityAPI
 );
 app.delete(
   "/quatro_product_discount/delete",
@@ -78,11 +78,11 @@ app.post("/quatro_address/update_details", db_address.updateAddressDetailsAPI);
 app.delete("/quatro_address/delete", db_address.deleteAddressAPI);
 //Cart
 app.post("/quatro_cart/create", db_cart.createCartAPI);
-app.post("/quatro_cart/delete", db_cart.deleteCartAPI);
+app.delete("/quatro_cart/delete", db_cart.deleteCartAPI);
 app.post("/quatro_cart/push", db_cart.pushCartAPI);
 //Discount Cart
 app.post("/quatro_cart/create_discount", db_cart.createCartDiscountAPI);
-app.post("/quatro_cart/delete_discount", db_cart.deleteCartDiscountAPI);
+app.delete("/quatro_cart/delete_discount", db_cart.deleteCartDiscountAPI);
 app.post("/quatro_cart/push_discount", db_cart.pushDiscountCartAPI);
 //Transaction
 app.post("/quatro_transaction/create", db_transac.createTransactionAPI);

@@ -164,7 +164,7 @@ const createCartDiscountAPI = async (request, response) => {
   }
 };
 
-const deleteDiscountCart = async function (discount_product_id) {
+const deleteDiscountCart = async function (user_id, discount_product_id) {
   let query_1 = {
     text: "select user_id from quatro_user where user_id=$1",
     values: [user_id],
