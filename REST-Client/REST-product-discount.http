@@ -46,5 +46,5 @@ DELETE http://localhost:5004/quatro_product_discount/delete
 Content-Type: application/json
 
 {
-    "discount_product_id" : 12
+    "discount_product_id" : 14
 }
