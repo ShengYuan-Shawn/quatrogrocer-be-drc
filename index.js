@@ -36,7 +36,7 @@ app.get("/", (request, response) => {
 //User
 app.post("/quatro_user/login", db_user.loginAPI);
 app.post("/quatro_user/create", db_user.createUserAPI);
-app.post("/quatro_user/search", db_auth, db_user.searchUserAPI);
+app.post("/quatro_user/search", db_user.searchUserAPI);
 app.post("/quatro_user/update", db_user.updateUserAPI);
 app.delete("/quatro_user/delete", db_user.deleteUserAPI);
 //Product
@@ -102,7 +102,7 @@ app.post("/quatro_user/add_credit", db_credit.addCreditUpdateAPI);
 //Update payment status
 app.post("/quatro_transaction/update_payment", db_transac.updatePaymentAPI);
 //Get from cart
-app.get("/quatro_transaction/get_details", db_transac.getTransactionAPI);
+app.get("/quatro_transaction/get_details/:id", db_transac.getTransactionAPI);
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
