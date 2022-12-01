@@ -50,6 +50,7 @@ const createAddress = async function (
   state,
   user_id
 ) {
+  console.log(address_line_1);
   let query = {
     text: "insert into quatro_address(address_line_1, address_line_2, address_line_3, postcode, state, user_id) values($1,$2,$3,$4,$5,$6) returning address_id",
     values: [
@@ -78,6 +79,9 @@ const createAddressAPI = async (request, response) => {
     user_id,
   } = request.body;
   try {
+    console.log(request.body);
+    console.log(address_line_1);
+    console.log(request.query.address_line_1);
     let newAddress = await createAddress(
       address_line_1,
       address_line_2,
