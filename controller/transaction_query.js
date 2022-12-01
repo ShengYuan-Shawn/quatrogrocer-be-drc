@@ -171,7 +171,7 @@ const updateTransactionDiscount = async function (user_id) {
   let resultQuery_1 = await pool.query(query_1);
   let user = resultQuery_1.rows;
 
-  if (uuser.length === 0) {
+  if (user.length === 0) {
     throw Error("User doesnt exist");
   }
 
